@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-database.js"></script>
+        <script src="fire.js"></script>
+        <link rel="stylesheet" href="test.css">      
+    </head>
+    <body>
+
+        <h1>Find your technician</h1>
+
+        <div class="content">
+
+            <form id="search-form">
+                <input type="text"  name="location" id ="location" placeholder="Enter location">
+                <button type="submit" onclick="fetch();">Search</button>
+            </form>
+
+            <ul id="technicians-list"></ul>
+
+        </div>
+
+
+        <script>
+            // Initialize Firebase
+            var config = {               
+            apiKey: "AIzaSyBB2rlzMTsD_loLDNY8pJbJ5eVPWTxFTVg",
+            authDomain: "eco-tec-a3fed.firebaseapp.com",
+            databaseURL: "https://eco-tec-a3fed.firebaseio.com",
+            projectId: "eco-tec-a3fed",
+            storageBucket: "",
+            messagingSenderId: "930751107997"
+            };
+            firebase.initializeApp(config);
+            const db = firebase.firestore();
+            db.settings({ timestampsInSnapshots: true }); 
+        </script>
+        <script src="forcustomers.js"></script>
+    </body>
+</html>
