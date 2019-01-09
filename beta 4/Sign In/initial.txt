@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-database.js"></script>
+<!--         
+        <script src="fire.js"></script> -->
+        <link rel="stylesheet" href="styles.css"> 
+        <link rel="stylesheet" href="card.css">     
+    </head>
+    <body>
+
+        <h1>Find your technician</h1>
+
+        <div class="content">
+            <!-- <button onclick="mainapp.logOut()">Log Out</button> -->
+ 
+            <form id="search-form">
+                <input type="text"  name="location" id ="location" placeholder="Enter location">
+                <button type="submit" onclick="fetch();" id="thebutton">Search</button>
+            </form>
+
+            <ul id="technicians-list"></ul>
+
+            <div class="wrapper">
+                
+            </div>
+            <!-- <div class="card"> -->
+                <!-- <img src="/w3images/team2.jpg" alt="John" style="width:100%"> -->
+                <!-- <h1 id = "nameofcompany"></h1>
+                <p id="city"></p>
+                <p id= "district"></p>
+                <p id= "contactus"></p> -->
+            <!-- </div> -->
+
+        </div>
+
+
+
+        <script>
+            // Initialize Firebase
+            var config = {               
+            apiKey: "AIzaSyBB2rlzMTsD_loLDNY8pJbJ5eVPWTxFTVg",
+            authDomain: "eco-tec-a3fed.firebaseapp.com",
+            databaseURL: "https://eco-tec-a3fed.firebaseio.com",
+            projectId: "eco-tec-a3fed",
+            storageBucket: "",
+            messagingSenderId: "930751107997"
+            };
+            firebase.initializeApp(config);
+            const db = firebase.firestore();
+            db.settings({ timestampsInSnapshots: true }); 
+        </script>
+        <script src="forcustomers.js"></script>
+        <script firebaseURL="https://eco-tec-a3fed.firebaseio.com" fullStarImg="https://1.bp.blogspot.com/-SkJnv3SoIYo/WCjmIOjlSoI/AAAAAAAAAD4/Zj3kATWlvBU4i4NOceqE4NKOn-OJtUPBwCLcB/s1600/4.png" emptyStarImg="https://4.bp.blogspot.com/-5ZXWRxL-mjI/WCjl001_sVI/AAAAAAAAADo/exjKyHG7e7Yl1zpmLnDJ1-7F4RNG2Qc3gCLcB/s1600/0.png" hoverStarImg="https://4.bp.blogspot.com/-5hpGJU6MxNc/WCjmLCNZ4WI/AAAAAAAAAD8/4BNKi460d9c9PID7MCPgTIpMt2wJO5W7QCLcB/s1600/5.png" numberOfStars="5" starSize="30" textSize="15" fontFamily="Comic Sans MS" align="center" topText="Rating:" bottomText="Average: $average$ / $max$ ($votes$ votes)" blockText="You have already rated it" src="https://drive.google.com/uc?export=download&id=1_3EXmeXQzNkbuQ369vV4li-eLN1mGcOV"></script>
+        <!-- <button onclick="mainapp.logOut()">Log Out</button>
+        <script src="firebase.js"></script>
+        <script src="login.js"></script>
+        <script src="main.js"></script> -->
+        <!-- Facebook Plugin Script -->
+        <!-- <script>
+            window.fbAsyncInit = function() {
+              FB.init({
+                appId            : '962800520592925',
+                autoLogAppEvents : true,
+                xfbml            : true,
+                version          : 'v2.12'
+              });
+            };
+          
+            (function(d, s, id){
+               var js, fjs = d.getElementsByTagName(s)[0];
+               if (d.getElementById(id)) {return;}
+               js = d.createElement(s); js.id = id;
+               js.src = "https://connect.facebook.net/en_US/sdk.js";
+               fjs.parentNode.insertBefore(js, fjs);
+             }(document, 'script', 'facebook-jssdk'));
+          </script>
+          
+          <div class="fb-customerchat" page_id="2163809330548681"></div> -->
+          <!-- <script src="firebase.js"></script>
+          <script src="login.js"></script>
+          <script src="main.js"></script> -->
+    </body>
+</html>
