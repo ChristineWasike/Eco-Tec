@@ -21,6 +21,22 @@ li{
 .container .banner img{
     border: none;
     display: block;
-    margin:  10% 20%;
+    margin:  10% 20% 0 20%;
 }
 
+.btn-primary {
+    background-color:black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 0 35%;
+    border-radius: 0;
+  }
+
+  .btn-primary:hover {
+      background-color: rgba(0, 0, 0, 0.692);
+  }
