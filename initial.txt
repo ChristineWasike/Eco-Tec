@@ -15,7 +15,7 @@
         <h1>Find your technician</h1>
 
         <div class="content">
-          
+            <!-- <button onclick="mainapp.logOut()">Log Out</button> -->
  
             <form id="search-form">
                 <input type="text"  name="location" id ="location" placeholder="Enter location">
@@ -80,6 +80,8 @@
           </script>
           
           <div class="fb-customerchat" page_id="2163809330548681"></div> -->
-         
+          <!-- <script src="firebase.js"></script>
+          <script src="login.js"></script>
+          <script src="main.js"></script> -->
     </body>
 </html>

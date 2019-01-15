@@ -2,7 +2,10 @@ body{
     background: #eab0dc;
     font-family: ubuntu;
 }
-
+#uploader{
+    margin-left: 30%;
+    padding-left: 70px;
+}
 h1{
     color: #fff;
     font-size: 300%;
@@ -12,7 +15,7 @@ h1{
 }
 
 .content{
-    background: #fff;
+    /* background: #fff; */
     max-width: 960px;
     margin: 30px auto;
     padding:  20px 30px;
@@ -88,7 +91,7 @@ form:after{
     display: block;
 }
 
-button{
+#thebutton{
     border: 0;
     background: #fff;
     border-radius: 10px;
