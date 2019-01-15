@@ -16,3 +16,11 @@ li{
 #login{
     display: none;
 }
+
+
+.container .banner img{
+    border: none;
+    display: block;
+    margin:  10% 20%;
+}
+
